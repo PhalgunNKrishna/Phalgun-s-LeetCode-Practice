@@ -1,5 +1,8 @@
 class Solution:
     
+    ##### VIEW THIS AGAIN TONIGHT AND TOMORROW
+    ##### MAKE SURE TO UNDERSTAND
+
     def expandAroundCenter(self, s, start, end):
         
         while (start >= 0 and end < len(s) and s[start] == s[end]):
