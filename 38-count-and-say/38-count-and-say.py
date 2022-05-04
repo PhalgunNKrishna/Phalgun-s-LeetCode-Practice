@@ -12,7 +12,6 @@ class Solution:
                     ret += digitString[start]
                     start = i
             ret += str(len(digitString) - start)
-            #print('start = ', len(digitString) - start)
             ret += digitString[start]
             return ret
     
@@ -20,5 +19,4 @@ class Solution:
         digitString = ""
         for i in range(1, n + 1):
             digitString = self.generate(i, digitString)
-            print(i, digitString)
         return digitString
