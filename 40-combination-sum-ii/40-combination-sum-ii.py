@@ -64,8 +64,10 @@ class Solution:
 
         results = []  # container to hold the final combinations
         counter = Counter(candidates)
+        print('counter 1 = ', counter)
         # convert the counter table to a list of (num, count) tuples
         counter = [(c, counter[c]) for c in counter]
+        print('counter 2 = ', counter)
 
         backtrack(comb = [], remain = target, curr = 0,
                   counter = counter, results = results)
