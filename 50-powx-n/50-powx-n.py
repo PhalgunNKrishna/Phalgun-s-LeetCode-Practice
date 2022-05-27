@@ -35,7 +35,6 @@ class Solution:
             return 1.0
         
         halfPow = self.fastPow(x, n // 2)
-        print('half = ', halfPow, n)
         
         if n % 2 == 0:
             return halfPow * halfPow
@@ -47,7 +46,6 @@ class Solution:
         if n < 0:
             x = 1 / x
             n = -n
-        
+            
         return self.fastPow(x, n)
-    
     
