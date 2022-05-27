@@ -31,8 +31,6 @@ class Solution:
     
     def fastPow(self, x: float, n: int) -> float:
         
-        if n == 1:
-            return x
         if n == 0:
             return 1.0
         
