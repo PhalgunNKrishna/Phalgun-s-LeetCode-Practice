@@ -53,6 +53,7 @@ class Solution:
             else:
                 currSub += nums[i]
             maxSub = max(currSub, maxSub)
+            print(maxSub, currSub, i)
             
         return maxSub
         
