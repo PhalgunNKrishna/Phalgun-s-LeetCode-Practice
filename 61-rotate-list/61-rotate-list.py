@@ -59,6 +59,7 @@ class Solution:
 
         # new tail should be n - k % n - 1
         # new head should be n - k % n
+        ###### WHY IS THE NEW HEAD AND NEW TAIL THESE POSITIONS THOUGH
         newTail = head
         for i in range(nodeCount - k % nodeCount - 1):
             newTail = newTail.next
