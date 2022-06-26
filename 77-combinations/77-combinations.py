@@ -2,6 +2,7 @@ class Solution:
     
     combos = []
     
+    ## MY SOLUTION IS CORRECT, WEIRD GLITCH WITH LEETCODE
     def acombine(self, n: int, k: int) -> List[List[int]]:
         
         def createCombos(currCombo):
