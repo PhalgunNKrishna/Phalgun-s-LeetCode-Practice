@@ -26,6 +26,7 @@ class Solution:
         return allCombos
     
     # 2nd TRY
+    # BASICALLY SAME AS ABOVE BUT WITH MINOR ALTERATION ("FIRST" ARGUMENT HELPS TO NOT HAVE TO CHECK IF CURRENT ELEMENT ALREADY IN CURRCOMBO)
     def subsets(self, nums: List[int]) -> List[List[int]]:
         
         allCombos = []
