@@ -26,6 +26,7 @@ class Solution:
             
         return ret
     
+    ### PRACTICALLY THE SAME AS 2 POINTER SOLUTION GIVEN
     def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
         
         if head == None:
