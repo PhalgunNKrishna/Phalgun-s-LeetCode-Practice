@@ -25,6 +25,9 @@ class Solution:
         
         for p in range(n + m):
             
+            ### p2 >= n means the pointer has already gone through the entire num2 list since there's only n items in nums2
+            ### p1 < m means that we haven't fully iterated through nums1copy yet
+            ### since nums1copy is just the original nums1, we can check to see which of the elements pointed at are smaller and change up nums1 accordingly
             if p2 >= n or (p1 < m and nums1copy[p1] < nums2[p2]):
                 nums1[p] = nums1copy[p1]
                 p1 += 1
