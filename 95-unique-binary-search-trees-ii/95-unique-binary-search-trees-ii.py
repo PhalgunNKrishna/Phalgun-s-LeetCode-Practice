@@ -5,10 +5,14 @@
 #         self.left = left
 #         self.right = right
 class Solution:
+    
+    ### THOROUGHLY STUDY THIS --> MAKES SENSE NOW
     def generateTrees(self, n: int) -> List[Optional[TreeNode]]:
         
         def generate(start, end):
             
+            # generate(start, i - 1) --> end consistently decreasing by 1 --> if start > end, can't make a tree out of it
+            # generate(i + 1, end) --> start consistently increasing by 1
             if start > end:
                 return [None,]
             
@@ -18,6 +22,7 @@ class Solution:
                 leftTrees = generate(start, i - 1)
                 rightTrees = generate(i + 1, end)
                 
+                # for each left tree, connect each of existing right trees to left tree through the current root
                 for l in leftTrees:
                     for r in rightTrees:
                         currTree = TreeNode(i)
