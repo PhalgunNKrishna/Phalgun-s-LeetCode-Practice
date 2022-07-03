@@ -19,6 +19,7 @@ class Solution:
             allTrees = []
             
             for i in range(start, end + 1):
+                # left trees + right trees are the allTrees returned by generate() recursion
                 leftTrees = generate(start, i - 1)
                 rightTrees = generate(i + 1, end)
                 
