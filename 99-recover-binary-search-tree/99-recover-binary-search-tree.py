@@ -46,6 +46,7 @@ class Solution:
             
             return x, y
         
+        # count = 2 because, you have to recover 2 wrongly placed numbers
         def recover(r, count):
             
             if r:
