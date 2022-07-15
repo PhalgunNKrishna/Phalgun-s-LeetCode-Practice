@@ -42,6 +42,7 @@ class Solution:
         if root is None:
             return []
         
+        # nodes of different levels are separated by a delimiter, in this case delimiter we chose is 'NONE'
         nodeQueue = deque([root, None])
         goLeft = True
         
