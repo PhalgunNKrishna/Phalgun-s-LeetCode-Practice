@@ -8,6 +8,7 @@ class Solution:
     
     preOrderIndex = 0
     
+    # kind of close
     def abuildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
         
         root = TreeNode(preorder[0])
