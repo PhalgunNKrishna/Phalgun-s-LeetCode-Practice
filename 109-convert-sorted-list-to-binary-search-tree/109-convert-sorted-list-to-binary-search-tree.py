@@ -11,7 +11,8 @@
 #         self.right = right
 class Solution:
     
-    # MY SOLUTION
+    # MY SOLUTION:
+    #       Convert the linked list into a regular list and follow from there on out
     def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
         
         sortedList = []
